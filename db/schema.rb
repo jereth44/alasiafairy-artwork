@@ -12,14 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20190901220126) do
 
-  create_table "canvas", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "photos", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -28,13 +20,6 @@ ActiveRecord::Schema.define(version: 20190901220126) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-  end
-
-  create_table "resumes", force: :cascade do |t|
-    t.string "name"
-    t.string "attachment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "templates", force: :cascade do |t|
